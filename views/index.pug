@@ -12,7 +12,7 @@ block content
         ul.list-group.mt-5
             each todo , i in todos
                 li.list-group-item.d-flex.justify-content-between.border.border-primary
-                    a(href=`/todo/${todo._id}`)=todo.todo
+                    a(href=`#`)=todo.todo
                     .btn-container
                         a.btn.btn-warning.mr-2(href=`/todo/edit/${todo._id}`) edit
                         a.btn.btn-danger(href=`/todo/delete/${todo._id}`) delete
